@@ -1,13 +1,12 @@
-<!DOCTYPE html>
-<html>
-	<body>
-		<h2>Media de notas</h2>
-		Primeira nota <input id="n1" type="number"> <br/>
-		Segunda nota <input id="n2" type="number"> <br/>
+    function media(){
+	    var n1 = parseFloat(document.getElementById("n1").value);
+	    var n2 = parseFloat(document.getElementById("n2").value);
 
-		<button onclick="media()">Calcular Média</button>
+    	var media = (n1+n2)/2;
 
-		<script src="script.js"></script>
-
-	</body>
-</html>
+    	if(media >= 7){
+    		alert("Aprovado " + media);
+    		} else { alert("Reprovado");
+    			
+    		}
+    }
